@@ -1,0 +1,137 @@
+
+/*parte I*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Helvetica, "Trebuchet MS", sans-serif;
+    background: #fff url(/imagens/bg.png);
+    margin: 15px;
+}
+
+#container{
+    background: #ede9cc;
+
+    /*parte II*/
+    margin: 0 auto;
+    min-width: 740px;
+    max-width: 1180px;/*obs4*/
+
+}
+
+#topo{
+    position: relative;
+    background: #dbcd87;
+    height: 15.4em; /*obs1*/
+    min-height: 250px;
+}
+#area-logo{
+    position: absolute;
+    top: 0;/*obs2*/
+    left: 0;/*obs2*/
+    background: url(/imagens/topo-imagem-principal.png) no-repeat;
+    width: 100%;/*obs3*/
+    height: 250px;
+    z-index: 1;/*obs5*/
+}
+.logo a{/*parte II*/
+    position: absolute;
+    top:15px;
+    left: 15px;
+    z-index: 3;
+    background: url(/imagens/logo.png) no-repeat;
+    width: 151px;
+    height: 66px;
+    text-indent: -9000px;
+}
+#area-menu{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url(/imagens/topo-imagem-lateral.png) no-repeat;
+    width: 450px;
+    height: 250px;
+    z-index: 2;
+    /* border: 1px solid red;*/
+} 
+
+#conteudo-menu{/*parte II*/
+    margin-left: 90px;/*obs6*/
+    margin-right: 15px;
+    padding-top: 15px;
+}
+
+#menu-locais{/*parte II*/
+    border-bottom: 1px solid #b5ab56;
+    border-top: 1px solid #b5ab56;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 0.7em;
+    color: #8b8448;
+}
+
+#menu-locais .locais{/*parte II*/
+    float: left;
+    line-height: 2.1em;
+}
+a{/*parte II*/
+    text-decoration: none;
+}
+
+a.reserva{/*parte II*/
+    text-transform: uppercase;
+    background: #a29750;
+    color: #fff5b0;
+    padding: 5px 10px;
+    float: right;
+}
+
+/*Barra de navegacao vertical - parte III*/
+
+#menu{
+    margin-top: 15px;
+
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ul#navegacao{
+    float: left;
+}
+ul#navegacao a{
+    text-transform: uppercase;
+    font-size: 0.8em;
+    padding: 5px;
+    color: #6e672c;
+    line-height: 30px;
+    /* border: 1px solid red; */
+}
+ul#navegacao a:hover{
+    background: #fdf6be;
+}
+
+.depoimento{
+    width: 226px;
+    height: 164px;
+    float: right;
+}
+
+
+/*****OBSERVACOES******/
+
+/*OBS1: como o tamanho est'a em 'em' queremos que o background fique com um tamanho proporcional aos textos, ja que '1em' corresponde a 16px*/
+
+/*OBS2: tem a ver com o position absolute. Coloca o elemento na posicao toopo 0 e a esquerda na 0 tambem.*/
+
+/*OBS3: essa largura eh adaptavel para que possa deixar o layout liquido como proposta desse projeto*/
+
+/*OBS4: vai depender muito da imagem que ser'a colocada no background.*/
+
+/*OBS5: o z-index diz qual elemento vai sobrepor o outro.*/
+
+/*OBS6: margem esquerda colocada para que o conteudo do menu fique dentro da area designada e nao sobreponha a imagem da esquerda, o que ocorreria caso nao tivesse essa margem.*/
