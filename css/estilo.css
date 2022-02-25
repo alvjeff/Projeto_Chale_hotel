@@ -12,7 +12,7 @@ body{
 }
 
 #container{
-    background: #ede9cc;
+    background: #ede9cc url(/imagens/bg-container.png) top center repeat-y; /*obs8*/
 
     /*parte II*/
     margin: 0 auto;
@@ -121,6 +121,31 @@ ul#navegacao a:hover{
     float: right;
 }
 
+/*Area de conteudos - parte III*/
+
+#area-principal{
+    background: url(/imagens/bg-area-principal.png) top left repeat-x;
+    float: left;
+    width: 50%;
+    padding: 15px 0;
+}
+#area-lateral{
+    background: url(/imagens/bg-area-lateral.png) top left repeat-x;
+    float: right;
+    width: 50%;
+    padding: 20px 0;
+}
+
+.conteudo{
+    margin: 0 auto;
+    width: 90%;
+    /* background: red; */
+}
+
+#rodape{
+    clear: both;/*obs7*/
+}
+
 
 /*****OBSERVACOES******/
 
@@ -135,3 +160,7 @@ ul#navegacao a:hover{
 /*OBS5: o z-index diz qual elemento vai sobrepor o outro.*/
 
 /*OBS6: margem esquerda colocada para que o conteudo do menu fique dentro da area designada e nao sobreponha a imagem da esquerda, o que ocorreria caso nao tivesse essa margem.*/
+
+/*OBS7: esse rodape foi criado por duas finalidades. Primeiro para realmente se ter um rodap'e no site e segundo para ele com o clear both poder limpar o float e poder aparecer o background do container.*/
+
+/*OBS8: foi usado mais uma vez a abordagem de por uma imagem como background em substituicao a apenas por uma cor. Nesse caso a imagem foi totalmente calculada pra poder ficar exatamente no meio e poder dividir o container em 2 setores ou divs. Nao eh muito bem a abordagem que prefiro mas estou seguindo o tutorial.*/
